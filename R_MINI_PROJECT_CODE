@@ -1,0 +1,9 @@
+library(ggplot2)
+
+ggplot(df, aes(x = Age, y = BloodPressure)) +
+  geom_point(color = "blue") +
+  labs(
+    title = "Scatter Plot: Age vs Blood Pressure",
+    x = "Age",
+    y = "Blood Pressure (mmHg)"
+  )
