@@ -1,3 +1,4 @@
+# Histogram of Age vs Blood Pressure
 library(ggplot2)
 
 ggplot(df, aes(x = Age, y = BloodPressure)) +
@@ -7,3 +8,26 @@ ggplot(df, aes(x = Age, y = BloodPressure)) +
     x = "Age",
     y = "Blood Pressure (mmHg)"
   )
+
+# Histogram of Age Distribution
+library(ggplot2)
+
+ggplot(df, aes(x = Age)) +
+  geom_histogram(binwidth = 5, fill = "tomato", color = "black") +
+  labs(
+    title = "Histogram of Age Distribution",
+    x = "Age",
+    y = "Frequency"
+  )
+
+# Histogram of Blood Pressure
+library(ggplot2)
+
+ggplot(df, aes(x = BloodPressure)) +
+  geom_histogram(binwidth = 10, fill = "pink", color = "black") +
+  labs(
+    title = "Histogram of Blood Pressure",
+    x = "Blood Pressure (mmHg)",
+    y = "Frequency"
+  )
+
